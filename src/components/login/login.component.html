@@ -1,19 +1,18 @@
+
+
 <div class="loginform">
-<h2>Login</h2>
+    <h2>Login</h2>
+      <form>
+        <div class="name-section">
+            <input id="userName" type="text" placeholder="User name" />
+        </div>
+        <div class="password-section">
+            <input id="pawd" type="password" placeholder="Password" />
+        </div>
 
-<form>
-    <div>
-       
-        <input id="userName" type="text" placeholder="User name"/>
-    </div>
-<div>
-    
-    <input id="pawd" type="password" placeholder="Password"/>
-</div>
-
-<button (click)="onsubmit()">Login</button>
-
-</form>
+        <div class="button-section">
+            <button (click)="onsubmit()">Login</button>
+        </div>
+    </form>
 
 </div>
-

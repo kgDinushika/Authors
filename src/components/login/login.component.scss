@@ -2,27 +2,42 @@
 {
 
     background-color: darkslateblue;
-    margin-left: 5cm;
-    margin-right: 25cm;
     border-radius: 15px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    
 h2{
     color: white;
-    margin-left: 15px;
-    margin-top: 15px;
+margin-left: 2%;
 }
-
+.name-section{
+    flex: 1;
+    
+    margin:2%;
+    }
+.password-section
+    {
+       margin:2%;
+    }
+.button-section
+{
+    flex-wrap: wrap;
+    text-align: right;
+    margin-right: 50%;
+    margin-bottom: 2%;
+}
 
 button
 {
- margin-left: 15px;
- margin-top: 5px;
- background-color: darkorange;
+ background-color: adjust-color($color: #a109a1);
+ color: white;
  border-radius: 5px
 }
 input
 {
-    margin-left: 15px;  
     border-radius: 5px
+    
 }
 }

@@ -1,15 +1,21 @@
-<h1>{{authors.length + title}}</h1>
 
-<table>
-<tr  *ngFor="let author of authorMap.values()">
-<td>{{author.name}}</td>
-<td><img src="{{'..\\'+author.photo }}" ></td>
-<td><ul>
-    <li *ngFor="let book of bookMap.get(author.id)" ><button (click)="changeBook(book)">{{book.name}}</button></li>
-</ul> 
+<div class="page">
+    <div *ngFor="let author of authorMap.values()">
+        <div class="each-author">
+            <div class="author-name">
+                {{author.name}}
+            </div>
+            <div class="author-photo">
+                <img src="{{'..\\'+author.photo }}">
+            </div>
+            <div class="author-books">
+                <ul>
+                    <li *ngFor="let book of bookMap.get(author.id)"><a (click)="changeBook(book)">{{book.name}}</a></li>
+                </ul>
 
-</td>
-</tr>
+            </div>
+        </div>
 
-</table>
+    </div>
 
+</div>

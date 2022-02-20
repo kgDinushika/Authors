@@ -1,9 +1,33 @@
-p {
-    text-align: left;
-}
+
 
 img {
     width: 25%;
     height: auto;
    
   }
+
+a{
+    cursor:pointer;
+}
+
+.each-author
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.author-name
+{
+    flex: 1;
+}
+.author-photo
+{
+    flex:2;
+}
+
+.author-books
+{
+    flex: 3;
+    text-align: left;
+}

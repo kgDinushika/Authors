@@ -1,3 +1,4 @@
+import { AddPaneComponent } from './../components/add-pane/add-pane.component';
 import { BookShopComponent } from './../components/book-shop/book-shop.component';
 import { LoginComponent } from './../components/login/login.component';
 import { BookDetailComponent } from './../components/book-detail/book-detail.component';
@@ -14,7 +15,8 @@ import { AuthorRegisterComponent } from '../components/author-register/author-re
     AuthorRegisterComponent,
     BookDetailComponent,
     LoginComponent,
-    BookShopComponent
+    BookShopComponent,
+    AddPaneComponent
   ],
   imports: [
     BrowserModule,
